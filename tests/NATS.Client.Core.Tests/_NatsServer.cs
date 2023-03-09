@@ -8,7 +8,7 @@ namespace NATS.Client.Core.Tests;
 public class NatsServer : IAsyncDisposable
 {
     static readonly string ext = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? ".exe" : "";
-    static readonly string natsServerPath = $"../../../../../tools/nats-server{ext}";
+    static readonly string natsServerPath = $"nats-server{ext}";
 
     readonly CancellationTokenSource cancellationTokenSource = new();
     readonly string? configFileName;
